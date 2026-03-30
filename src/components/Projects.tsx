@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { projects } from "@/utils/data";
-import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { FiGithub, FiExternalLink, FiPlay } from "react-icons/fi";
 
 export default function Projects() {
   const [isVisible, setIsVisible] = useState(false);
@@ -48,11 +48,13 @@ export default function Projects() {
               onMouseEnter={() => setHoveredProject(project.id)}
               onMouseLeave={() => setHoveredProject(null)}
             >
-              {/* Project Image Placeholder */}
+              {/* Project Image */}
               <div className="relative h-48 bg-gradient-to-br from-accent/20 to-purple-600/20 overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-6xl opacity-30">🚀</span>
-                </div>
+                <img
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
                 <div
                   className={`absolute inset-0 bg-primary/80 flex items-center justify-center gap-4 transition-opacity duration-300 ${
                     hoveredProject === project.id ? "opacity-100" : "opacity-0"
@@ -65,6 +67,7 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       className="p-3 bg-accent hover:bg-accent-hover text-primary rounded-full transition-colors duration-200 transform hover:scale-110"
                       aria-label="View code"
+                      title="Исходный код"
                     >
                       <FiGithub size={20} />
                     </a>
@@ -76,6 +79,7 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       className="p-3 bg-accent hover:bg-accent-hover text-primary rounded-full transition-colors duration-200 transform hover:scale-110"
                       aria-label="View demo"
+                      title="Демо версия"
                     >
                       <FiExternalLink size={20} />
                     </a>
@@ -91,7 +95,7 @@ export default function Projects() {
                 <p className="text-gray-400 mb-4 line-clamp-3">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
@@ -100,6 +104,32 @@ export default function Projects() {
                       {tech}
                     </span>
                   ))}
+                </div>
+                
+                {/* Launch Button */}
+                <div className="flex gap-2">
+                  {project.demoUrl && (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-accent to-purple-600 hover:from-accent-hover hover:to-purple-500 text-primary font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
+                    >
+                      <FiPlay size={18} />
+                      <span>Запустить</span>
+                    </a>
+                  )}
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-3 border border-gray-600 hover:border-accent text-gray-300 hover:text-accent font-semibold rounded-lg transition-all duration-300"
+                      aria-label="View code"
+                    >
+                      <FiGithub size={20} />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

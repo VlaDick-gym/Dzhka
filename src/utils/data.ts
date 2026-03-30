@@ -55,7 +55,7 @@ export const projects: Project[] = [
     description: "Классическое приложение для управления задачами. Добавление, редактирование, удаление задач, фильтрация по статусу, сохранение в localStorage. Идеальный проект для начала.",
     technologies: ["React", "TypeScript", "CSS Modules", "LocalStorage"],
     imageUrl: "https://images.unsplash.com/photo-1611224923853-80b023f02d79?w=600&h=400&fit=crop",
-    demoUrl: "https://github.com/VlaDick-gym/todo-app",
+    demoUrl: "https://vladick-gym.github.io/todo-app/",
     githubUrl: "https://github.com/VlaDick-gym/todo-app",
   },
   {
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     description: "Приложение с прогнозом погоды. Поиск городов, отображение текущей погоды и прогноза на 5 дней. Интеграция с OpenWeatherMap API.",
     technologies: ["React", "OpenWeatherMap API", "CSS3", "Fetch API"],
     imageUrl: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=600&h=400&fit=crop",
-    demoUrl: "https://github.com/VlaDick-gym/weather-app",
+    demoUrl: "https://vladick-gym.github.io/weather-app/",
     githubUrl: "https://github.com/VlaDick-gym/weather-app",
   },
   {
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     description: "Поиск рецептов по ингредиентам или названию. Детальная информация о блюде, калорийность, пошаговое приготовление. API от TheMealDB.",
     technologies: ["React", "TheMealDB API", "Tailwind CSS", "Async/Await"],
     imageUrl: "https://images.unsplash.com/photo-1495521821758-02d05715e063?w=600&h=400&fit=crop",
-    demoUrl: "https://github.com/VlaDick-gym/recipe-finder",
+    demoUrl: "https://vladick-gym.github.io/recipe-finder/",
     githubUrl: "https://github.com/VlaDick-gym/recipe-finder",
   },
   {
@@ -82,7 +82,7 @@ export const projects: Project[] = [
     description: "Просмотр профиля GitHub по нику. Отображение репозиториев, статистики, языков программирования. Интеграция с GitHub API.",
     technologies: ["React", "GitHub API", "Styled Components", "Axios"],
     imageUrl: "https://images.unsplash.com/photo-1618477461853-5f8dd68aa395?w=600&h=400&fit=crop",
-    demoUrl: "https://github.com/VlaDick-gym/github-profile-viewer",
+    demoUrl: "https://vladick-gym.github.io/github-profile-viewer/",
     githubUrl: "https://github.com/VlaDick-gym/github-profile-viewer",
   },
   {
@@ -91,7 +91,7 @@ export const projects: Project[] = [
     description: "Трекер личных расходов и доходов. Категории трат, визуализация данных, экспорт в CSV. Помогает контролировать бюджет.",
     technologies: ["React", "Chart.js", "TypeScript", "IndexedDB"],
     imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=400&fit=crop",
-    demoUrl: "https://github.com/VlaDick-gym/expense-tracker",
+    demoUrl: "https://vladick-gym.github.io/expense-tracker/",
     githubUrl: "https://github.com/VlaDick-gym/expense-tracker",
   },
   {
@@ -100,7 +100,7 @@ export const projects: Project[] = [
     description: "Каталог фильмов с поиском, фильтрами и рейтингами. Информация о фильмах, трейлеры, актёрский состав. API от TMDB.",
     technologies: ["Next.js", "TMDB API", "Tailwind CSS", "SWR"],
     imageUrl: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=600&h=400&fit=crop",
-    demoUrl: "https://github.com/VlaDick-gym/movie-database",
+    demoUrl: "https://vladick-gym.github.io/movie-database/",
     githubUrl: "https://github.com/VlaDick-gym/movie-database",
   },
 ];
