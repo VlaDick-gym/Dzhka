@@ -63,7 +63,7 @@ export default function Projects() {
                 {/* Project Icon - Fixed Height */}
                 <div className="relative h-40 bg-gradient-to-br from-accent/20 to-purple-600/20 flex items-center justify-center flex-shrink-0">
                   <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-accent to-purple-600 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
-                    <IconComponent size={40} className="text-white" />
+                    <IconComponent size={40} />
                   </div>
                   <div
                     className={`absolute inset-0 bg-primary/80 flex items-center justify-center gap-4 transition-opacity duration-300 ${
